@@ -34,6 +34,36 @@ $fifth-color: #707070;
   }
 }
 
+@media only screen and (min-width: 3841px) {
+  body {
+    z-index: 2;
+    background: $third-color;
+    width: 100%;
+    font-size: 0;
+    block-size: 0;
+  }
+
+  img {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+
+  input {
+    display: none;
+  }
+
+  #cannot {
+    font-size: 40px;
+    width: min(100% - 2rem);
+    margin-inside: auto;
+    text-align: center;
+    padding: 15%;
+  }
+}
+
 @media only screen and (min-width: 1920px) and (max-width: 3840px) {
   @font-face {
     font-family: Roboto;
@@ -140,7 +170,45 @@ $fifth-color: #707070;
     }
 
     &#role-bin {
+      position: fixed;
+      top: 516px;
+      left: calc(100% - 62.9%);
+      margin-left: max(5.7%, min(0%, 100px));
 
+      @media only screen and (min-width: 2020px) {
+        &#role-bin {
+          position: fixed;
+          left: calc(100% - 62.4%);
+        }
+      }
+
+      @media only screen and (min-width: 2320px) {
+        &#role-bin {
+          position: fixed;
+          left: calc(100% - 62.3%);
+        }
+      }
+
+      @media only screen and (min-width: 2500px) {
+        &#role-bin {
+          position: fixed;
+          left: calc(100% - 62.1%);
+        }
+      }
+
+      @media only screen and (min-width: 2900px) {
+        &#role-bin {
+          position: fixed;
+          left: calc(100% - 61.7%);
+        }
+      }
+
+      @media only screen and (min-width: 3060px) {
+        &#role-bin {
+          position: fixed;
+          left: calc(100% - 61.6%);
+        }
+      }
     }
 
     &.pen {
@@ -152,11 +220,42 @@ $fifth-color: #707070;
 
     &#method-pen {
       position: relative;
-      top: 5px;
+      top: 0;
     }
 
     &#role-pen {
+      position: fixed;
+      top: 516px;
+      left: calc(100% - 60.9%);
+      margin-left: max(5.7%, min(0%, 100px));
 
+      @media only screen and (min-width: 2020px) {
+        &#role-pen {
+          position: fixed;
+          left: calc(100% - 60.7%);
+        }
+      }
+
+      @media only screen and (min-width: 2320px) {
+        &#role-pen {
+          position: fixed;
+          left: calc(100% - 60.6%);
+        }
+      }
+
+      @media only screen and (min-width: 2920px) {
+        &#role-pen {
+          position: fixed;
+          left: calc(100% - 60.5%);
+        }
+      }
+
+      @media only screen and (min-width: 3060px) {
+        &#role-pen {
+          position: fixed;
+          left: calc(100% - 60.4%);
+        }
+      }
     }
 
     &.role-svg {
@@ -211,8 +310,6 @@ $fifth-color: #707070;
         border-radius: 10px 0 0 10px;
       }
     }
-
-
   }
 
   .pop {
@@ -228,7 +325,7 @@ $fifth-color: #707070;
   .users-list {
     float: none;
     list-style: none;
-    position: fixed;
+    position: absolute;
     top: 200px;
 
     & li {
@@ -280,11 +377,9 @@ $fifth-color: #707070;
     float: left;
     text-align: left;
     height: 280px;
-    //margin: -135px auto auto 149.6%;
     padding: 10px;
     background: $secondary-color;
     line-height: 110%;
-
     border-radius: 0 0 15px 15px;
     box-sizing: content-box;
     -webkit-animation-duration: 0.5s;
@@ -440,8 +535,6 @@ $fifth-color: #707070;
     float: left;
     list-style: none;
     padding: 10px;
-    //margin: 35px 35px auto 90px;
-    //margin-inside: auto;
     position: fixed;
     left: calc(100% - 80%);
     background: $secondary-color;
@@ -535,14 +628,13 @@ $fifth-color: #707070;
     float: left;
     position: relative;
     top: 10px;
+    justify-content: flex-end;
 
     & label {
-      display: block;
       background: $secondary-color;
       text-align: center;
       height: 17px;
       cursor: pointer;
-      width: 152%;
       -webkit-transition: all 0.2s ease-in-out;
       -moz-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out;
@@ -619,7 +711,7 @@ $fifth-color: #707070;
     margin-top: 10px;
   }
 
-  #rolesname {
+  #roles-name {
     float: left;
     padding-bottom: 17px;
   }
