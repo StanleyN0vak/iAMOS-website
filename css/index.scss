@@ -140,8 +140,7 @@ $fifth-color: #707070;
     }
 
     &#role-bin {
-      position: relative;
-      top: -24px;
+
     }
 
     &.pen {
@@ -157,8 +156,7 @@ $fifth-color: #707070;
     }
 
     &#role-pen {
-      position: relative;
-      top: -9px;
+
     }
 
     &.role-svg {
@@ -230,7 +228,8 @@ $fifth-color: #707070;
   .users-list {
     float: none;
     list-style: none;
-    position: relative;
+    position: fixed;
+    top: 200px;
 
     & li {
       float: left;
@@ -269,34 +268,10 @@ $fifth-color: #707070;
   [id^=userl]:checked ~ [id^=content-user] {
     display: block;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.19);
-    min-width: 486px;
-    width: auto;
-
-  }
-
-  [id=userl2]:checked ~ [id=content-user2] {
-    position: relative;
-    top: -76px;
-  }
-
-  [id=userl3]:checked ~ [id=content-user3] {
-    position: relative;
-    top: -152px;
-  }
-
-  [id=userl4]:checked ~ [id=content-user4] {
-    position: relative;
-    top: -228px;
-  }
-
-  [id=userl5]:checked ~ [id=content-user5] {
-    position: relative;
-    top: -304px;
-  }
-
-  [id=userl6]:checked ~ [id=content-user6] {
-    position: relative;
-    top: -380px;
+    width: calc(100% - 74%);
+    position: fixed;
+    top: 180px;
+    left: calc(100% - 80%);
   }
 
   .content-user {
@@ -304,13 +279,12 @@ $fifth-color: #707070;
     display: none;
     float: left;
     text-align: left;
-    min-width: 221%;
-    width: auto;
     height: 280px;
-    margin: -135px auto auto 149.6%;
-    padding: 10px 0;
+    //margin: -135px auto auto 149.6%;
+    padding: 10px;
     background: $secondary-color;
     line-height: 110%;
+
     border-radius: 0 0 15px 15px;
     box-sizing: content-box;
     -webkit-animation-duration: 0.5s;
@@ -321,7 +295,7 @@ $fifth-color: #707070;
   .contact {
     float: left;
     list-style: none;
-    position: relative;
+    position: fixed;
 
     & input[type=radio] {
       position: absolute;
@@ -347,49 +321,23 @@ $fifth-color: #707070;
   [id^=userl]:checked ~ [id^=contact-user] {
     display: block;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+    width: calc(100% - 74%);
+    position: fixed;
+    top: 180px;
+    left: calc(100% - 49%);
   }
 
-  [id=userl2]:checked ~ [id=contact-user2] {
-    position: relative;
-    top: -76px;
-  }
-
-  [id=userl3]:checked ~ [id=contact-user3] {
-    position: relative;
-    top: -152px;
-  }
-
-  [id=userl4]:checked ~ [id=contact-user4] {
-    position: relative;
-    top: -228px;
-  }
-
-  [id=userl5]:checked ~ [id=contact-user5] {
-    position: relative;
-    top: -304px;
-  }
-
-  [id=userl6]:checked ~ [id=contact-user6] {
-    position: relative;
-    top: -380px;
-  }
 
   .contact-user {
     z-index: 2;
     display: none;
     text-align: left;
     float: left;
-    min-width: 219%;
-    width: auto;
-    height: 291px;
-    margin-top: -300px;
-    margin-left: 388%;
-    padding-top: 10px;
-    padding-left: 10px;
+    height: 290px;
+    padding: 10px 10px 2px 10px;
     background: $secondary-color;
     line-height: 110%;
     border-radius: 0 0 15px 15px;
-    top: -86px;
     box-sizing: content-box;
     -webkit-animation-duration: 0.5s;
     -o-animation-duration: 0.5s;
@@ -397,15 +345,21 @@ $fifth-color: #707070;
   }
 
   #contact-method {
-    height: 30px;
-    padding-top: 13px;
-    position: relative;
-    left: auto;
+    padding-top: 10px;
+    padding-bottom: 7px;
+  }
+
+  #middle-details {
+    top: 103px;
   }
 
   #middle-contact {
-    margin-left: 0;
-    margin-right: 0;
+    top: 103px;
+    left: calc(100% - 49%);
+  }
+
+  #middle-roles {
+    top: 490px;
   }
 
   .tabs {
@@ -481,13 +435,15 @@ $fifth-color: #707070;
   }
 
   .middle-list {
-    width: min(24%, 550px);
+    width: calc(100% - 74%);
     display: block;
     float: left;
     list-style: none;
-    padding: 15px;
-    margin: 35px 35px auto 90px;
-    margin-inside: auto;
+    padding: 10px;
+    //margin: 35px 35px auto 90px;
+    //margin-inside: auto;
+    position: fixed;
+    left: calc(100% - 80%);
     background: $secondary-color;
     border-radius: 15px 15px 0 0;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 10px 0 rgba(0, 0, 0, 0.19);
@@ -530,18 +486,16 @@ $fifth-color: #707070;
     z-index: 2;
     display: block;
     text-align: left;
-    min-width: 102.1%;
+    width: calc(100% - 74%);
     height: 120px;
-    margin-top: 55px;
-    margin-inside: auto;
     padding-top: 20px;
     padding-left: 20px;
     background: $secondary-color;
     line-height: 110%;
-    position: absolute;
     border-radius: 0 0 15px 15px;
-    top: -5px;
-    left: -15px;
+    position: fixed;
+    top: 566px;
+    left: calc(100% - 80%);
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
     box-sizing: content-box;
     -webkit-animation-duration: 0.5s;
@@ -559,18 +513,6 @@ $fifth-color: #707070;
     float: left;
   }
 
-  table {
-    margin-left: auto;
-    margin-right: auto;
-    background: #000000;
-  }
-
-  td {
-    border-radius: 0 0 15px 15px;
-    background: $secondary-color;
-    border: 1px solid $secondary-color;
-    vertical-align: text-top;
-  }
 
   .big {
     border-radius: 15px 15px 0 0;
@@ -589,21 +531,24 @@ $fifth-color: #707070;
     border-radius: 15px 0 0 0;
   }
 
-  #details {
-    float: right;
-    margin: 30px;
-  }
-
-  #contact {
-    float: left;
-    margin: 15px 0 0 0;
-  }
-
   #roles {
     float: left;
     position: relative;
     top: 10px;
+
+    & label {
+      display: block;
+      background: $secondary-color;
+      text-align: center;
+      height: 17px;
+      cursor: pointer;
+      width: 152%;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+    }
   }
+
 
   #leftcol {
     float: left;
@@ -671,16 +616,12 @@ $fifth-color: #707070;
   }
 
   #user-details {
-    float: none;
-    list-style: none;
-    position: relative;
-    margin: 15px 0 0 0;
+    margin-top: 10px;
   }
 
   #rolesname {
     float: left;
-    margin-right: min(222px);
-    margin-bottom: -5.7px;
+    padding-bottom: 17px;
   }
 
   #cannot {
