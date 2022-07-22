@@ -20,13 +20,35 @@
   }
 }
 
+@media only screen and (min-width: 3841px) {
+  body {
+    z-index: 2;
+    width: 100%;
+    block-size: 0;
+    background: #00aa45;
+    font-size: 0;
+  }
+
+  img, button, input {
+    display: none;
+  }
+
+  #cannot {
+    width: 100% - 2rem;
+    margin-inside: auto;
+    text-align: center;
+    padding: 15%;
+    font-size: 150px;
+  }
+}
+
 @media only screen and (min-width: 1920px) and (max-width: 3840px) {
   @font-face {
     font-family: Roboto;
     src: url("Roboto-Regular.ba6b0c1b.ttf");
   }
 
-  .data-users:hover, p.acti:hover, img#menu:hover {
+  p.act:hover, img.menu:hover {
     cursor: pointer;
     -o-transition: all .2s ease-in-out;
     background: #e4e4e4;
@@ -42,6 +64,17 @@
     font-size: 12px;
   }
 
+  .middle-list-roles, .middle-list-contact, .middle-list {
+    width: 26%;
+    height: 50px;
+    background: #fff;
+    border-radius: 15px 15px 0 0;
+    padding: 10px;
+    position: fixed;
+    left: 20%;
+    box-shadow: 0 0 1px #0003, 0 0 10px #00000030;
+  }
+
   html {
     font-family: Roboto, serif;
   }
@@ -51,61 +84,53 @@
     background: #f2f4f7;
   }
 
-  footer, section {
+  footer {
     clear: both;
   }
 
-  #bar {
+  section {
+    justify-content: space-between;
+    display: flex;
+  }
+
+  header {
     height: 70px;
     background: #fff;
   }
 
-  #user {
+  .log-on {
     float: right;
     margin-top: 20px;
     padding-right: 30px;
   }
 
-  #user-name {
-    float: right;
+  .Piotr {
+    float: left;
     margin: 5px;
     font-size: 16px;
-  }
-
-  a {
-    float: left;
-    margin-left: 5px;
-    font-size: 18px;
-    position: relative;
-    bottom: 5px;
-  }
-
-  a#lefta {
-    margin-top: 20px;
-    margin-left: 30px;
   }
 
   img {
     float: left;
   }
 
-  img#menu {
-    float: left;
+  img.menu {
     padding: 25px 20px 24px 15px;
+    display: flex;
   }
 
-  img#menu:hover {
+  img.menu:hover {
     border-radius: 0 10px 10px 0;
   }
 
-  img#iAMOS {
-    float: left;
+  img.iAMOS {
     margin-left: 110px;
     padding-top: 17px;
+    display: flex;
   }
 
-  img#user-svg {
-    float: right;
+  img.user-svg {
+    float: left;
     margin-left: 10px;
   }
 
@@ -122,55 +147,140 @@
   }
 
   img#role-bin {
-    position: relative;
-    top: -24px;
+    position: fixed;
+    top: 520px;
+    left: 35%;
   }
+}
 
+@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 2144px) {
+  img#role-bin#role-bin {
+    left: 36.2%;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 2400px) {
+  img#role-bin#role-bin {
+    left: 37.2%;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 2752px) {
+  img#role-bin#role-bin {
+    left: 38.4%;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 3200px) {
+  img#role-bin#role-bin {
+    left: 39.4%;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 3840px) {
+  img#role-bin#role-bin {
+    left: 40.5%;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   img.pen {
     float: right;
     margin: 0 5px;
     position: relative;
     top: -10px;
   }
+}
 
-  img#method-pen {
-    position: relative;
-    top: 5px;
-  }
-
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   img#role-pen {
-    position: relative;
-    top: -9px;
+    position: fixed;
+    top: 520px;
+    left: 44.5%;
   }
+}
 
+@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 2144px) {
+  img#role-pen#role-pen {
+    left: 44.7%;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 2400px) {
+  img#role-pen#role-pen {
+    left: 44.9%;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 2752px) {
+  img#role-pen#role-pen {
+    left: 45%;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 3200px) {
+  img#role-pen#role-pen {
+    left: 45.1%;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 3840px) {
+  img#role-pen#role-pen {
+    left: 45.3%;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   img.role-svg {
     margin: 2px 10px 0 0;
   }
+}
 
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   img.user-active {
     margin: 0 5px 0 0;
   }
+}
 
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   img.contact-svg {
-    align-items: center;
     margin: 5px 23.2px 0 0;
   }
+}
 
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   img.email-contact {
     align-items: center;
     margin: 5px 23.2px 0 0;
     padding: 4px;
   }
+}
 
-  img.adres-contact {
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  img.address-contact {
     align-items: center;
     margin: 5px 23.2px 0 0;
     padding: 0 3px;
   }
+}
 
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   p {
     margin-top: 0;
     font-size: 18px;
+  }
+
+  p.headline {
+    float: left;
+    margin-left: 17px;
+    position: relative;
+    bottom: 5px;
+  }
+
+  p.headline-roles {
+    float: left;
+    margin-left: 17px;
+    position: relative;
   }
 
   p.user-name {
@@ -184,202 +294,127 @@
     left: 10px;
   }
 
-  p.acti {
-    padding-top: 20px;
+  p.act {
+    margin-top: 10px;
+    padding: 15px 0;
     font-size: 14px;
   }
 
-  p.acti:hover {
-    height: 30px;
+  p.act:hover {
     border-radius: 10px 0 0 10px;
   }
 
+  p.left-headline {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .pop {
     margin-left: 20px;
     padding-top: 2px;
     font-size: 14px;
   }
+}
 
-  .users-list {
-    float: none;
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  ul {
     list-style: none;
-    position: relative;
   }
+}
 
-  .users-list li {
-    float: left;
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  .users-list {
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: fixed;
+    top: 215px;
   }
+}
 
-  .users-list label {
-    width: 250px;
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  .user {
     cursor: pointer;
-    -o-transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
+    width: 240px;
+    height: 60px;
+    border-top: 1px solid #cdcaca;
+    padding: 20px 0 0 20px;
+  }
+
+  .user:hover {
+    box-sizing: content-box;
+    background-color: #d0d0d0;
+    border-radius: 0 15px 15px 0;
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    -o-animation-duration: .5s;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  [data-tab-content] {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  .active[data-tab-content] {
+    flex-direction: column;
     display: block;
-    position: relative;
-    left: 0;
+    position: fixed;
+    top: 205px;
+    left: 20%;
   }
+}
 
-  .users-list input[type="radio"] {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  [id^="userl"]:checked + label {
-    text-align: left;
-    height: 56px;
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  .user.active {
+    width: 233px;
     background: #f2f4f7;
     border-left: 8px solid #00aa45;
     border-radius: 5px;
-    padding: 18px 0 0 14px;
-    position: relative;
-    top: -15px;
-    left: -20px;
   }
+}
 
-  [id^="userl"]:checked ~ [id^="content-user"] {
-    min-width: 486px;
-    width: auto;
-    display: block;
-    box-shadow: 0 3px 3px #0003, 0 4px 5px #00000030;
-  }
-
-  [id="userl2"]:checked ~ [id="content-user2"] {
-    position: relative;
-    top: -76px;
-  }
-
-  [id="userl3"]:checked ~ [id="content-user3"] {
-    position: relative;
-    top: -152px;
-  }
-
-  [id="userl4"]:checked ~ [id="content-user4"] {
-    position: relative;
-    top: -228px;
-  }
-
-  [id="userl5"]:checked ~ [id="content-user5"] {
-    position: relative;
-    top: -304px;
-  }
-
-  [id="userl6"]:checked ~ [id="content-user6"] {
-    position: relative;
-    top: -380px;
-  }
-
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .content-user {
-    z-index: 2;
-    float: left;
-    text-align: left;
-    min-width: 221%;
-    width: auto;
-    height: 280px;
-    box-sizing: content-box;
+    width: calc(26% + 20px);
+    height: 290px;
     background: #fff;
     border-radius: 0 0 15px 15px;
-    margin: -135px auto auto 149.6%;
-    padding: 10px 0;
     line-height: 110%;
     -webkit-animation-duration: .5s;
     -moz-animation-duration: .5s;
     -o-animation-duration: .5s;
-    display: none;
-  }
-
-  .contact {
-    float: left;
-    list-style: none;
-    position: relative;
-  }
-
-  .contact input[type="radio"] {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  .contact li {
-    float: left;
-  }
-
-  .contact label {
-    width: 250px;
-    cursor: pointer;
-    -o-transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    display: block;
-    left: 0;
-  }
-
-  [id^="userl"]:checked ~ [id^="contact-user"] {
-    display: block;
+    position: fixed;
+    top: 190px;
+    left: 20%;
     box-shadow: 0 1px 3px #0003, 0 4px 10px #00000030;
   }
+}
 
-  [id="userl2"]:checked ~ [id="contact-user2"] {
-    position: relative;
-    top: -76px;
-  }
-
-  [id="userl3"]:checked ~ [id="contact-user3"] {
-    position: relative;
-    top: -152px;
-  }
-
-  [id="userl4"]:checked ~ [id="contact-user4"] {
-    position: relative;
-    top: -228px;
-  }
-
-  [id="userl5"]:checked ~ [id="contact-user5"] {
-    position: relative;
-    top: -304px;
-  }
-
-  [id="userl6"]:checked ~ [id="contact-user6"] {
-    position: relative;
-    top: -380px;
-  }
-
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .contact-user {
-    z-index: 2;
-    text-align: left;
-    float: left;
-    min-width: 219%;
-    width: auto;
-    height: 291px;
-    box-sizing: content-box;
+    width: calc(26% + 20px);
+    height: 280px;
     background: #fff;
     border-radius: 0 0 15px 15px;
-    margin-top: -300px;
-    margin-left: 388%;
     padding-top: 10px;
-    padding-left: 10px;
     line-height: 110%;
     -webkit-animation-duration: .5s;
     -moz-animation-duration: .5s;
     -o-animation-duration: .5s;
-    display: none;
-    top: -86px;
+    position: fixed;
+    top: 190px;
+    left: 51%;
+    box-shadow: 0 1px 3px #0003, 0 4px 10px #00000030;
   }
+}
 
-  #contact-method {
-    height: 30px;
-    padding-top: 13px;
-    position: relative;
-    left: auto;
-  }
-
-  #middle-contact {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .tabs {
     width: 285px;
     float: none;
@@ -407,6 +442,7 @@
     -o-transition: all .2s ease-in-out;
     background: #fff;
     padding: 30px 18px;
+    font-size: 18px;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     display: block;
@@ -418,20 +454,37 @@
     background: #e4e4e4;
     top: 0;
   }
+}
 
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   [id^="tab"]:checked + label {
     background: #fff;
     border-bottom: 2px solid #00aa45;
   }
+}
 
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  [id="tab1"] + label {
+    width: 107.7px;
+    background: #fff;
+    border-bottom: 2px solid #00aa45;
+    border-radius: 15px 0 0;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   [id^="tab"]:not(:checked) + label {
     color: #707070;
   }
+}
 
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   [id^="tab"]:checked ~ [id^="tab-content"] {
     display: block;
   }
+}
 
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .tab-content {
     z-index: 2;
     text-align: left;
@@ -448,62 +501,45 @@
     top: 39px;
     left: 10px;
   }
+}
 
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  .middle {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .middle-list {
-    width: min(24%, 550px);
-    float: left;
-    margin-inside: auto;
-    background: #fff;
-    border-radius: 15px 15px 0 0;
-    margin: 35px 35px auto 90px;
-    padding: 15px;
-    list-style: none;
-    display: block;
-    box-shadow: 0 0 1px #0003, 0 0 10px #00000030;
+    top: 103px;
   }
+}
 
-  .middle-list label {
-    text-align: center;
-    height: 17px;
-    cursor: pointer;
-    -o-transition: all .2s ease-in-out;
-    background: #fff;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    display: block;
-    position: relative;
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  .middle-list-contact {
+    top: 102px;
+    left: 51%;
   }
+}
 
-  .roles-content {
-    float: none;
-    list-style: none;
-    position: relative;
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  .middle-list-roles {
+    height: 39px;
+    top: 490px;
+    left: 20%;
   }
+}
 
-  .roles-content li {
-    float: left;
-  }
-
-  .roles-content label {
-    width: 250px;
-    cursor: pointer;
-    -o-transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    display: block;
-    left: 0;
-  }
-
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .roles-content {
     z-index: 2;
     text-align: left;
-    min-width: 102.1%;
+    width: 26%;
     height: 120px;
-    margin-inside: auto;
     box-sizing: content-box;
     background: #fff;
     border-radius: 0 0 15px 15px;
-    margin-top: 55px;
     padding-top: 20px;
     padding-left: 20px;
     line-height: 110%;
@@ -511,146 +547,95 @@
     -moz-animation-duration: .5s;
     -o-animation-duration: .5s;
     display: block;
-    position: absolute;
-    top: -5px;
-    left: -15px;
+    position: fixed;
+    top: 566px;
+    left: 20%;
     box-shadow: 0 1px 3px #0003, 0 4px 10px #00000030;
   }
+}
 
-  article {
-    margin: 400px 0 0 24px;
-    display: block;
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  .plus {
+    position: absolute;
+    top: 130px;
+    left: 215px;
   }
+}
 
-  #rolescon {
-    float: left;
-    display: block;
-  }
-
-  table {
-    background: #000;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  td {
-    vertical-align: text-top;
-    background: #fff;
-    border: 1px solid #fff;
-    border-radius: 0 0 15px 15px;
-  }
-
-  .big {
-    vertical-align: text-top;
-    background: #fff;
-    border: 1px solid #fff;
-    border-radius: 15px 15px 0 0;
-  }
-
-  #plus {
-    float: right;
-    margin: 20px;
-  }
-
-  #active {
-    width: 107.7px;
-    border-radius: 15px 0 0;
-  }
-
-  #details {
-    float: right;
-    margin: 30px;
-  }
-
-  #contact {
-    float: left;
-    margin: 15px 0 0;
-  }
-
-  #roles {
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  .roles {
     float: left;
     position: relative;
     top: 10px;
   }
+}
 
-  #leftcol {
-    float: left;
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  .left-panel {
     width: 261px;
     height: 760px;
     background: #e4e4e4;
     border-radius: 0 15px 15px 0;
     margin: 35px auto 0 0;
     line-height: 140%;
+    display: flex;
+    left: 0;
   }
+}
 
-  #lefta {
-    position: relative;
-    top: 2px;
-  }
-
-  #user-serchbar {
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  #user-searchbar {
     height: 40px;
     width: 185px;
     text-align: left;
-    float: right;
     cursor: pointer;
     background: #fff;
     border: none;
     border-radius: 0 25px 25px 0;
-    margin: 0 20px 0 0;
+    position: absolute;
+    top: 185px;
+    left: 45px;
   }
+}
 
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   button {
-    float: right;
     cursor: pointer;
     height: 42px;
     background: #fff;
     border: none;
     border-radius: 25px 0 0 25px;
-    margin: 0 0 0 28px;
+    position: absolute;
+    top: 185px;
+    left: 24px;
   }
+}
 
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .users-list {
-    clear: both;
-    padding-top: 10px;
+    flex-direction: column;
+    padding-top: 30px;
+    display: flex;
+    left: 0;
   }
+}
 
-  .data-users {
-    height: 60px;
-    width: 220px;
-    clear: both;
-    border-top: 1px solid #cdcaca;
-    padding: 15px 19px 0 30px;
-    list-style: none;
-    display: block;
-    position: relative;
-    left: -48px;
-  }
-
-  .data-users:hover {
-    background: #d0d0d0;
-    border-radius: 20px;
-  }
-
-  #rightcol {
-    float: right;
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  .right-panel {
     width: 313px;
+    position: fixed;
+    right: 0;
   }
+}
 
-  #user-details {
-    float: none;
-    margin: 15px 0 0;
-    list-style: none;
-    position: relative;
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  .user-details {
+    margin-top: 20px;
   }
+}
 
-  #rolesname {
-    float: left;
-    margin-bottom: -5.7px;
-    margin-right: 222px;
-  }
-
-  #cannot {
+@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  .cannot {
     font-size: 0;
   }
 }
