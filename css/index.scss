@@ -116,10 +116,9 @@ body {
 
     &.role-bin {
       display: flex;
-      position: fixed;
-      margin-top: -45px;
-      margin-left: 15px;
-      left: 42%;
+      position: relative;
+      top: -70px;
+      left: 85.4%;
     }
 
     &.pen {
@@ -132,9 +131,9 @@ body {
 
     &.role-pen {
       display: flex;
-      position: fixed;
-      top: 520px;
-      left: 44.7%;
+      position: relative;
+      top: -42px;
+      left: 93%;
       }
 
     &.role-svg {
