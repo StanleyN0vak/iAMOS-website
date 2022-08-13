@@ -4,67 +4,10 @@ $white-color: #FFFFFF;
 $green-color: #00AA45;
 $gray-color: #707070;
 
-@media only screen and (max-width: 1919px) {
-  body {
-    z-index: 2;
-    background: $green-color;
-    width: 100%;
-    font-size: 0;
-    block-size: 0;
-  }
-
-  img {
-    display: none;
-  }
-
-  button {
-    display: none;
-  }
-
-  input {
-    display: none;
-  }
-
-  .cannot {
-    font-size: 40px;
-    width: min(100% - 2rem);
-    margin-inside: auto;
-    text-align: center;
-    padding: 15%;
-  }
+body {
+  opacity: 0;
 }
-
-@media only screen and (min-width: 3841px) {
-  body {
-    z-index: 2;
-    background: $green-color;
-    width: 100%;
-    font-size: 0;
-    block-size: 0;
-  }
-
-  img {
-    display: none;
-  }
-
-  button {
-    display: none;
-  }
-
-  input {
-    display: none;
-  }
-
-  .cannot {
-    font-size: 150px;
-    width: min(100% - 2rem);
-    margin-inside: auto;
-    text-align: center;
-    padding: 15%;
-  }
-}
-
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+@media only screen and (min-width: 1920px) {
   @font-face {
     font-family: Roboto;
     src: url("../Roboto/Roboto-Regular.ttf");
@@ -104,6 +47,7 @@ $gray-color: #707070;
   body {
     background: $primary-color;
     width: 100%;
+    opacity: 1;
   }
 
   footer {
@@ -121,8 +65,9 @@ $gray-color: #707070;
   }
 
   .log-on {
-    float: right;
-    margin-top: 20px;
+    position: fixed;
+    top: 25px;
+    right: -5px;
     padding-right: 30px;
   }
 
@@ -131,13 +76,13 @@ $gray-color: #707070;
     right: 65px;
     margin: 5px;
     font-size: 16px;
+    top: 25px;
   }
 
   img {
-    float: left;
+    display: flex;
 
     &.menu {
-      display: flex;
       padding: 25px 20px 24px 15px ;
 
       &:hover {
@@ -147,9 +92,8 @@ $gray-color: #707070;
     }
 
     &.iAMOS {
-      display: flex;
-      padding-top: 17px;
       margin-left: 110px;
+      margin-top: -50px;
     }
 
     &.user-svg {
@@ -157,115 +101,66 @@ $gray-color: #707070;
     }
 
     &.act-svg {
-      margin-left: 25.3px;
+      position: fixed;
+      right: 200px;
       margin-right: 24.2px;
     }
 
     &.bin {
-      float: right;
-      margin: 0 5px 0 150px;
+      display: flex;
+      margin: 0 5px 0 2px;
       position: relative;
-      top: -10px;
+      top: -78px;
+      right: -85%;
     }
 
-    &#role-bin {
+    &.role-bin {
+      display: flex;
       position: fixed;
-      top: 520px;
-      left: 35%;
-
-      @media only screen and (min-width: 2144px) {
-        &#role-bin {
-          left: 36.2%;
-        }
-      }
-
-      @media only screen and (min-width: 2400px) {
-        &#role-bin {
-          left: 37.2%;
-        }
-      }
-
-      @media only screen and (min-width: 2752px) {
-        &#role-bin {
-          left: 38.4%;
-        }
-      }
-
-      @media only screen and (min-width: 3200px) {
-        &#role-bin {
-          left: 39.4%;
-        }
-      }
-
-      @media only screen and (min-width: 3840px) {
-        &#role-bin {
-          left: 40.5%;
-        }
-      }
+      margin-top: -45px;
+      margin-left: 15px;
+      left: 42%;
     }
 
     &.pen {
-      float: right;
+      display: flex;
       margin: 0 5px 0 5px;
       position: relative;
-      top: -10px;
+      top: -50px;
+      left: 92%;
     }
 
-    &#role-pen {
+    &.role-pen {
+      display: flex;
       position: fixed;
       top: 520px;
-      left: 44.5%;
-
-      @media only screen and (min-width: 2144px) {
-        &#role-pen {
-          left: 44.7%;
-        }
+      left: 44.7%;
       }
-
-      @media only screen and (min-width: 2400px) {
-        &#role-pen {
-          left: 44.9%;
-        }
-      }
-
-      @media only screen and (min-width: 2752px) {
-        &#role-pen {
-          left: 45%;
-        }
-      }
-
-      @media only screen and (min-width: 3200px) {
-        &#role-pen {
-          left: 45.1%;
-        }
-      }
-
-      @media only screen and (min-width: 3840px) {
-        &#role-pen {
-          left: 45.3%;
-        }
-      }
-    }
 
     &.role-svg {
+      position: fixed;
       margin: 2px 10px 0 0;
     }
 
     &.user-active {
+      position: fixed;
       margin: 0 5px 0 0;
     }
 
     &.contact-svg {
+      position: fixed;
       margin: 5px 23.2px 0 0;
     }
 
     &.email-contact {
+      position: fixed;
       margin: 5px 23.2px 0 0;
       align-items: center;
       padding: 4px ;
     }
 
     &.address-contact {
+      position: fixed;
       margin: 5px 23.2px 0 0;
       align-items: center;
       padding: 0 3px;
@@ -277,33 +172,34 @@ $gray-color: #707070;
     margin-top: 0;
 
     &.headline {
-      float: left;
+      display: flex;
       margin-left: 17px;
       position: relative;
       bottom: 5px;
     }
 
     &.headline-roles {
-      float: left;
       margin-left: 17px;
       position: relative;
     }
 
     &.user-name {
       position: relative;
-      left: 10px;
+      top: -40px;
+      left: 50px;
     }
 
     &.users-email {
       @extend %pod;
       position: relative;
-      top: -25px;
-      left: 10px;
+      top: -65px;
+      left: 30px;
     }
 
     &.act {
+      position: relative;
       margin-top: 10px;
-      padding: 15px 0 15px 0;
+      padding: 15px 0 15px 70px;
       font-size: 14px;
 
       &:hover {
@@ -322,10 +218,20 @@ $gray-color: #707070;
     padding-top: 2px;
     margin-left: 20px;
     font-size: 14px;
+
+    &.role-name {
+      position: relative;
+      left: 25px;
+    }
   }
 
   .pod {
     @extend %pod;
+
+    &.role-number {
+      position: relative;
+      left: 25px;
+    }
   }
 
   ul {
@@ -413,7 +319,6 @@ $gray-color: #707070;
 
   .tabs {
     width: 285px;
-    float: none;
     list-style: none;
     position: relative;
     padding: 0;
@@ -425,8 +330,12 @@ $gray-color: #707070;
       left: -9999px;
     }
 
-    & li {
-      float: left;
+    & .history {
+      position: absolute;
+      top: 0;
+      left: 54%;
+      width: 107px;
+      height: 13px;
     }
 
     & label {
@@ -447,7 +356,6 @@ $gray-color: #707070;
 
     & label:hover {
       background: $secondary-color;
-      top: 0;
     }
   }
 
@@ -460,7 +368,6 @@ $gray-color: #707070;
     background: #FFFFFF;
     width: 107.7px;
     border-radius: 15px 0 0 0;
-    border-bottom: 2px solid $green-color;
   }
 
   [id^=tab]:not(:checked) + label {
@@ -542,7 +449,6 @@ $gray-color: #707070;
   }
 
   .roles {
-    float: left;
     position: relative;
     top: 10px;
   }
@@ -601,5 +507,11 @@ $gray-color: #707070;
 
   .cannot {
     font-size: 0;
+  }
+}
+
+@media only screen and (min-width: 3840px) {
+  body {
+    display: none;
   }
 }

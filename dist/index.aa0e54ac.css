@@ -1,48 +1,8 @@
-@media only screen and (max-width: 1919px) {
-  body {
-    z-index: 2;
-    width: 100%;
-    block-size: 0;
-    background: #00aa45;
-    font-size: 0;
-  }
-
-  img, button, input {
-    display: none;
-  }
-
-  .cannot {
-    width: 100% - 2rem;
-    margin-inside: auto;
-    text-align: center;
-    padding: 15%;
-    font-size: 40px;
-  }
+body {
+  opacity: 0;
 }
 
-@media only screen and (min-width: 3841px) {
-  body {
-    z-index: 2;
-    width: 100%;
-    block-size: 0;
-    background: #00aa45;
-    font-size: 0;
-  }
-
-  img, button, input {
-    display: none;
-  }
-
-  .cannot {
-    width: 100% - 2rem;
-    margin-inside: auto;
-    text-align: center;
-    padding: 15%;
-    font-size: 150px;
-  }
-}
-
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+@media only screen and (min-width: 1920px) {
   @font-face {
     font-family: Roboto;
     src: url("Roboto-Regular.ba6b0c1b.ttf");
@@ -81,6 +41,7 @@
 
   body {
     width: 100%;
+    opacity: 1;
     background: #f2f4f7;
   }
 
@@ -99,25 +60,26 @@
   }
 
   .log-on {
-    float: right;
-    margin-top: 20px;
     padding-right: 30px;
+    position: fixed;
+    top: 25px;
+    right: -5px;
   }
 
   .Piotr {
     margin: 5px;
     font-size: 16px;
     position: fixed;
+    top: 25px;
     right: 65px;
   }
 
   img {
-    float: left;
+    display: flex;
   }
 
   img.menu {
     padding: 25px 20px 24px 15px;
-    display: flex;
   }
 
   img.menu:hover {
@@ -125,9 +87,8 @@
   }
 
   img.iAMOS {
+    margin-top: -50px;
     margin-left: 110px;
-    padding-top: 17px;
-    display: flex;
   }
 
   img.user-svg {
@@ -135,169 +96,105 @@
   }
 
   img.act-svg {
-    margin-left: 25.3px;
     margin-right: 24.2px;
+    position: fixed;
+    right: 200px;
   }
 
   img.bin {
-    float: right;
-    margin: 0 5px 0 150px;
+    margin: 0 5px 0 2px;
+    display: flex;
     position: relative;
-    top: -10px;
+    top: -78px;
+    right: -85%;
   }
 
-  img#role-bin {
+  img.role-bin {
+    margin-top: -45px;
+    margin-left: 15px;
+    display: flex;
     position: fixed;
-    top: 520px;
-    left: 35%;
+    left: 42%;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 2144px) {
-  img#role-bin#role-bin {
-    left: 36.2%;
-  }
-}
-
-@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 2400px) {
-  img#role-bin#role-bin {
-    left: 37.2%;
-  }
-}
-
-@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 2752px) {
-  img#role-bin#role-bin {
-    left: 38.4%;
-  }
-}
-
-@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 3200px) {
-  img#role-bin#role-bin {
-    left: 39.4%;
-  }
-}
-
-@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 3840px) {
-  img#role-bin#role-bin {
-    left: 40.5%;
-  }
-}
-
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   img.pen {
-    float: right;
     margin: 0 5px;
+    display: flex;
     position: relative;
-    top: -10px;
+    top: -50px;
+    left: 92%;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
-  img#role-pen {
+  img.role-pen {
+    display: flex;
     position: fixed;
     top: 520px;
-    left: 44.5%;
-  }
-}
-
-@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 2144px) {
-  img#role-pen#role-pen {
     left: 44.7%;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 2400px) {
-  img#role-pen#role-pen {
-    left: 44.9%;
-  }
-}
-
-@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 2752px) {
-  img#role-pen#role-pen {
-    left: 45%;
-  }
-}
-
-@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 3200px) {
-  img#role-pen#role-pen {
-    left: 45.1%;
-  }
-}
-
-@media only screen and (min-width: 1920px) and (max-width: 3840px) and (min-width: 3840px) {
-  img#role-pen#role-pen {
-    left: 45.3%;
-  }
-}
-
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   img.role-svg {
     margin: 2px 10px 0 0;
+    position: fixed;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   img.user-active {
     margin: 0 5px 0 0;
+    position: fixed;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   img.contact-svg {
     margin: 5px 23.2px 0 0;
+    position: fixed;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   img.email-contact {
     align-items: center;
     margin: 5px 23.2px 0 0;
     padding: 4px;
+    position: fixed;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   img.address-contact {
     align-items: center;
     margin: 5px 23.2px 0 0;
     padding: 0 3px;
+    position: fixed;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   p {
     margin-top: 0;
     font-size: 18px;
   }
 
   p.headline {
-    float: left;
     margin-left: 17px;
+    display: flex;
     position: relative;
     bottom: 5px;
   }
 
   p.headline-roles {
-    float: left;
     margin-left: 17px;
     position: relative;
   }
 
   p.user-name {
     position: relative;
-    left: 10px;
+    top: -40px;
+    left: 50px;
   }
 
   p.users-email {
     position: relative;
-    top: -25px;
-    left: 10px;
+    top: -65px;
+    left: 30px;
   }
 
   p.act {
     margin-top: 10px;
-    padding: 15px 0;
+    padding: 15px 0 15px 70px;
     font-size: 14px;
+    position: relative;
   }
 
   p.act:hover {
@@ -308,23 +205,22 @@
     margin-top: 30px;
     margin-left: 30px;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .pop {
     margin-left: 20px;
     padding-top: 2px;
     font-size: 14px;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+  .pop.role-name, .pod.role-number {
+    position: relative;
+    left: 25px;
+  }
+
   ul {
     list-style: none;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .users-list {
     justify-content: space-around;
     margin: 0;
@@ -333,9 +229,7 @@
     position: fixed;
     top: 215px;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .user {
     cursor: pointer;
     width: 240px;
@@ -352,15 +246,11 @@
     -moz-animation-duration: .5s;
     -o-animation-duration: .5s;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   [data-tab-content] {
     display: none;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .active[data-tab-content] {
     flex-direction: column;
     display: block;
@@ -368,18 +258,14 @@
     top: 205px;
     left: 20%;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .user.active {
     width: 233px;
     background: #f2f4f7;
     border-left: 8px solid #00aa45;
     border-radius: 5px;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .content-user {
     width: calc(26% + 20px);
     height: 290px;
@@ -394,9 +280,7 @@
     left: 20%;
     box-shadow: 0 1px 3px #0003, 0 4px 10px #00000030;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .contact-user {
     width: calc(26% + 20px);
     height: 280px;
@@ -412,12 +296,9 @@
     left: 51%;
     box-shadow: 0 1px 3px #0003, 0 4px 10px #00000030;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .tabs {
     width: 285px;
-    float: none;
     margin: 35px 0 0 22px;
     padding: 0;
     list-style: none;
@@ -430,8 +311,12 @@
     left: -9999px;
   }
 
-  .tabs li {
-    float: left;
+  .tabs .history {
+    width: 107px;
+    height: 13px;
+    position: absolute;
+    top: 0;
+    left: 54%;
   }
 
   .tabs label {
@@ -452,39 +337,27 @@
 
   .tabs label:hover {
     background: #e4e4e4;
-    top: 0;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   [id^="tab"]:checked + label {
     background: #fff;
     border-bottom: 2px solid #00aa45;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   [id="tab1"] + label {
     width: 107.7px;
     background: #fff;
-    border-bottom: 2px solid #00aa45;
     border-radius: 15px 0 0;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   [id^="tab"]:not(:checked) + label {
     color: #707070;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   [id^="tab"]:checked ~ [id^="tab-content"] {
     display: block;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .tab-content {
     z-index: 2;
     text-align: left;
@@ -501,37 +374,27 @@
     top: 39px;
     left: 10px;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .middle {
     justify-content: center;
     display: flex;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .middle-list {
     top: 103px;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .middle-list-contact {
     top: 102px;
     left: 51%;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .middle-list-roles {
     height: 39px;
     top: 490px;
     left: calc((100vm - 1920px) / 2 + 313px);
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .roles-content {
     z-index: 2;
     text-align: left;
@@ -552,25 +415,18 @@
     left: 20%;
     box-shadow: 0 1px 3px #0003, 0 4px 10px #00000030;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .plus {
     position: absolute;
     top: 130px;
     left: 215px;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .roles {
-    float: left;
     position: relative;
     top: 10px;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .left-panel {
     width: 261px;
     height: 760px;
@@ -581,9 +437,7 @@
     display: flex;
     left: 0;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   #user-searchbar {
     height: 40px;
     width: 185px;
@@ -596,9 +450,7 @@
     top: 185px;
     left: 45px;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   button {
     cursor: pointer;
     height: 42px;
@@ -609,34 +461,32 @@
     top: 185px;
     left: 24px;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .users-list {
     flex-direction: column;
     padding-top: 30px;
     display: flex;
     left: 0;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .right-panel {
     width: 313px;
     position: fixed;
     right: 0;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .user-details {
     margin-top: 20px;
   }
-}
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
   .cannot {
     font-size: 0;
+  }
+}
+
+@media only screen and (min-width: 3840px) {
+  body {
+    display: none;
   }
 }
 

@@ -9,7 +9,6 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.scss">
-  <script src="js/index.js" defer></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -82,7 +81,7 @@
       </li>
       <li>
         <input type="radio" name="tabs" id="tab2">
-        <label for="tab2">HISTORIA</label>
+        <label for="tab2" class="history">HISTORIA</label>
         <div id="tab-content2" class="tab-content animated fadeIn">
           <p class="pop">Text2</p>
         </div>
@@ -101,118 +100,23 @@
   </li>
   <li>
     <div class="content-user">
-      <div id="user1" data-tab-content class="active">
+      <div data-tab-content class="active">
         <div class="pop">Johannes Schumaher</div>
         <div class="pod">Name</div>
         <div class="pop">johannes.schumaher@programisci.eu</div>
         <div class="pod">Login (email)</div>
         <div class="pop">08671/982</div>
         <div class="pod">Telephone number</div>
-        <div class="pop"><img class="user-active" src="img/active.svg" alt="active">Active</div>
+        <div class="pop"><img class="user-active" src="img/active.svg" alt="active">&emsp;&nbsp;&nbsp;Active</div>
         <div class="pod">Status</div>
         <div class="pop">2018-11-21  &emsp;   11:23:11</div>
         <div class="pod">Created on</div>
         <div class="contact-user">
-          <div class="pop"><img class="contact-svg" src="img/credit.svg" alt="credit">Dietrich</div><div class="pod">Manager</div>
-          <div class="pop"><img class="contact-svg" src="img/phone.svg" alt="phone">08671/982</div><div class="pod">Dietrich</div>
-          <div class="pop"><img class="contact-svg" src="img/email.svg" alt="email">johannes.schumaher@programisci.eu</div><div class="pod">User login</div>
-          <div class="pop"><img class="email-contact" src="img/emailcom.svg" alt="email company">10125Standart@korian.de</div><div class="pod">Company email</div>
-          <div class="pop"><img class="address-contact" src="img/adres.svg" alt="address">Berliner Strasse, 10293 Munich</div><div class="pod">Adres</div>
-        </div>
-      </div>
-      <div id="user2" data-tab-content>
-        <div class="pop">Johannes Schumaher</div>
-        <div class="pod">Name</div>
-        <div class="pop">johannes.schumaher@programisci.eu</div>
-        <div class="pod">Login (email)</div>
-        <div class="pop">08671/982</div>
-        <div class="pod">Telephone number</div>
-        <div class="pop"><img class="user-active" src="img/active.svg" alt="active">Active</div>
-        <div class="pod">Status</div>
-        <div class="pop">2018-11-21  &emsp;   11:23:11</div>
-        <div class="pod">Created on</div>
-        <div class="contact-user">
-          <div class="pop"><img class="contact-svg" src="img/credit.svg" alt="credit">Dietrich</div><div class="pod">Manager</div>
-          <div class="pop"><img class="contact-svg" src="img/phone.svg" alt="phone">08671/982</div><div class="pod">Dietrich</div>
-          <div class="pop"><img class="contact-svg" src="img/email.svg" alt="email">johannes.schumaher@programisci.eu</div><div class="pod">User login</div>
-          <div class="pop"><img class="email-contact" src="img/emailcom.svg" alt="email company">10125Standart@korian.de</div><div class="pod">Company email</div>
-          <div class="pop"><img class="address-contact" src="img/adres.svg" alt="address">Berliner Strasse, 10293 Munich</div><div class="pod">Adres</div>
-        </div>
-      </div>
-      <div id="user3" data-tab-content>
-        <div class="pop">Johannes Schumaher</div>
-        <div class="pod">Name</div>
-        <div class="pop">johannes.schumaher@programisci.eu</div>
-        <div class="pod">Login (email)</div>
-        <div class="pop">08671/982</div>
-        <div class="pod">Telephone number</div>
-        <div class="pop"><img class="user-active" src="img/active.svg" alt="active">Active</div>
-        <div class="pod">Status</div>
-        <div class="pop">2018-11-21  &emsp;   11:23:11</div>
-        <div class="pod">Created on</div>
-        <div class="contact-user">
-          <div class="pop"><img class="contact-svg" src="img/credit.svg" alt="credit">Dietrich</div><div class="pod">Manager</div>
-          <div class="pop"><img class="contact-svg" src="img/phone.svg" alt="phone">08671/982</div><div class="pod">Dietrich</div>
-          <div class="pop"><img class="contact-svg" src="img/email.svg" alt="email">johannes.schumaher@programisci.eu</div><div class="pod">User login</div>
-          <div class="pop"><img class="email-contact" src="img/emailcom.svg" alt="email company">10125Standart@korian.de</div><div class="pod">Company email</div>
-          <div class="pop"><img class="address-contact" src="img/adres.svg" alt="address">Berliner Strasse, 10293 Munich</div><div class="pod">Adres</div>
-        </div>
-      </div>
-      <div id="user4" data-tab-content>
-        <div class="pop">Johannes Schumaher</div>
-        <div class="pod">Name</div>
-        <div class="pop">johannes.schumaher@programisci.eu</div>
-        <div class="pod">Login (email)</div>
-        <div class="pop">08671/982</div>
-        <div class="pod">Telephone number</div>
-        <div class="pop"><img class="user-active" src="img/active.svg" alt="active">Active</div>
-        <div class="pod">Status</div>
-        <div class="pop">2018-11-21  &emsp;   11:23:11</div>
-        <div class="pod">Created on</div>
-        <div class="contact-user">
-          <div class="pop"><img class="contact-svg" src="img/credit.svg" alt="credit">Dietrich</div><div class="pod">Manager</div>
-          <div class="pop"><img class="contact-svg" src="img/phone.svg" alt="phone">08671/982</div><div class="pod">Dietrich</div>
-          <div class="pop"><img class="contact-svg" src="img/email.svg" alt="email">johannes.schumaher@programisci.eu</div><div class="pod">User login</div>
-          <div class="pop"><img class="email-contact" src="img/emailcom.svg" alt="email company">10125Standart@korian.de</div><div class="pod">Company email</div>
-          <div class="pop"><img class="address-contact" src="img/adres.svg" alt="address">Berliner Strasse, 10293 Munich</div><div class="pod">Adres</div>
-        </div>
-      </div>
-      <div id="user5" data-tab-content>
-        <div class="pop">Johannes Schumaher</div>
-        <div class="pod">Name</div>
-        <div class="pop">johannes.schumaher@programisci.eu</div>
-        <div class="pod">Login (email)</div>
-        <div class="pop">08671/982</div>
-        <div class="pod">Telephone number</div>
-        <div class="pop"><img class="user-active" src="img/active.svg" alt="active">Active</div>
-        <div class="pod">Status</div>
-        <div class="pop">2018-11-21  &emsp;   11:23:11</div>
-        <div class="pod">Created on</div>
-        <div class="contact-user">
-          <div class="pop"><img class="contact-svg" src="img/credit.svg" alt="credit">Dietrich</div><div class="pod">Manager</div>
-          <div class="pop"><img class="contact-svg" src="img/phone.svg" alt="phone">08671/982</div><div class="pod">Dietrich</div>
-          <div class="pop"><img class="contact-svg" src="img/email.svg" alt="email">johannes.schumaher@programisci.eu</div><div class="pod">User login</div>
-          <div class="pop"><img class="email-contact" src="img/emailcom.svg" alt="email company">10125Standart@korian.de</div><div class="pod">Company email</div>
-          <div class="pop"><img class="address-contact" src="img/adres.svg" alt="address">Berliner Strasse, 10293 Munich</div><div class="pod">Adres</div>
-        </div>
-      </div>
-      <div id="user6" data-tab-content>
-        <div class="pop">Johannes Schumaher</div>
-        <div class="pod">Name</div>
-        <div class="pop">johannes.schumaher@programisci.eu</div>
-        <div class="pod">Login (email)</div>
-        <div class="pop">08671/982</div>
-        <div class="pod">Telephone number</div>
-        <div class="pop"><img class="user-active" src="img/active.svg" alt="active">Active</div>
-        <div class="pod">Status</div>
-        <div class="pop">2018-11-21  &emsp;   11:23:11</div>
-        <div class="pod">Created on</div>
-        <div class="contact-user">
-          <div class="pop"><img class="contact-svg" src="img/credit.svg" alt="credit">Dietrich</div><div class="pod">Manager</div>
-          <div class="pop"><img class="contact-svg" src="img/phone.svg" alt="phone">08671/982</div><div class="pod">Dietrich</div>
-          <div class="pop"><img class="contact-svg" src="img/email.svg" alt="email">johannes.schumaher@programisci.eu</div><div class="pod">User login</div>
-          <div class="pop"><img class="email-contact" src="img/emailcom.svg" alt="email company">10125Standart@korian.de</div><div class="pod">Company email</div>
-          <div class="pop"><img class="address-contact" src="img/adres.svg" alt="address">Berliner Strasse, 10293 Munich</div><div class="pod">Adres</div>
+          <div class="pop"><img class="contact-svg" src="img/credit.svg" alt="credit">&emsp;&emsp;&emsp;Dietrich</div><div class="pod">&emsp;&emsp;&emsp;&nbsp; Manager</div>
+          <div class="pop"><img class="contact-svg" src="img/phone.svg" alt="phone">&emsp;&emsp;&emsp;08671/982</div><div class="pod">&emsp;&emsp;&emsp;&nbsp; Dietrich</div>
+          <div class="pop"><img class="contact-svg" src="img/email.svg" alt="email">&emsp;&emsp;&emsp;johannes.schumaher@programisci.eu</div><div class="pod">&emsp;&emsp;&emsp;&nbsp; User login</div>
+          <div class="pop"><img class="email-contact" src="img/emailcom.svg" alt="email company">&emsp;&emsp;&emsp;10125Standart@korian.de</div><div class="pod">&emsp;&emsp;&emsp;&nbsp; Company email</div>
+          <div class="pop"><img class="address-contact" src="img/adres.svg" alt="address">&emsp;&emsp;&emsp;Berliner Strasse, 10293 Munich</div><div class="pod">&emsp;&emsp;&emsp;&nbsp; Adres</div>
         </div>
       </div>
     </div>
@@ -229,19 +133,19 @@
   <li>
     <div class="roles">
           <p class="headline-roles">USER ROLES</p>
-          <img class="pen" id="role-pen" src="img/pen.svg" alt="pen">
-          <img class="bin" id="role-bin" src="img/bin.svg" alt="bin">
+          <img class="role-pen" src="img/pen.svg" alt="pen">
+          <img class="role-bin" src="img/bin.svg" alt="bin">
       <div class="roles-content">
         <article>
           <div class="date">
             <img class="role-svg" src="img/S.svg" alt="S">
-            <div class="pop">HUB Supervisor</div>
-            <div class="pod">ROLE48</div>
+            <div class="pop role-name">HUB Supervisor</div>
+            <div class="pod role-number">ROLE48</div>
           </div>
           <div class="date">
             <img class="role-svg" src="img/B.svg" alt="B">
-            <div class="pop">HAdministrator</div>
-            <div class="pod">ROLE35</div>
+            <div class="pop role-name">HAdministrator</div>
+            <div class="pod role-number">ROLE35</div>
           </div>
         </article>
       </div>
